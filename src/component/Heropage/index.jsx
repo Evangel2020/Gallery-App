@@ -1,8 +1,11 @@
 import React from 'react'
+import './heropage.css'
 
 const index = () => {
   return (
-    <div>She</div>
+    <div>
+      <h1>Hero Section</h1>
+    </div>
   )
 }
 
