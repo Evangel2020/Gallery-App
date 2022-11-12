@@ -1,12 +1,15 @@
 import React from "react";
 import Heropage from './component/Heropage/index'
+import Aboutpage from './component/Aboutpage/index'
+import Footer from './component/Footer/index'
 
 function App() {
 
   return (
     <div>
-      <h1>App</h1>
       <Heropage />
+      <Aboutpage />
+      <Footer />
     </div>
   )
 }
