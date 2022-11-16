@@ -34,49 +34,71 @@
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200 bold;
+    line-height: 1;
 
 }
 .second-image > p {
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 55%);
     padding-top: 20px;
+    font-size: 15px;
+    line-height: 1.2;
 }
 .content-heading {
     display: flex;
     margin: 8rem 0 5rem 0;
     width: 100%;
+    align-items: center;
 }
 .left-logo {
     color: hsl(0, 0%, 0%);
     font-size: 30px;
     width: 100%;
 }
+.left-logo > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
 .btn-right {
     width: 10%;
-    background-color: none;
-    border: 1px solid black;
-
 }
 .button {
+    width: 100%;
+    padding: 7px;
+    background-color: hsl(0, 0%, 100%);
+    outline: none;
     color: hsl(0, 0%, 0%);
-    text-align: center;
+    border: 1px solid hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .gallery-grid {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .gallery-grid > img {
     width: 100%;
 }
+
 .first-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
+    gap: 40px;
 }
 .second-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    gap: 40px;
 }
 .grid-image {
     position: relative;
@@ -88,4 +110,78 @@
     bottom: 10%;
     left: 12%;
     text-transform: uppercase;
+}
+.grid-content > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+.botton-grid > button{
+    padding: 7px;
+    background-color: hsl(0, 0%, 100%);
+    outline: none;
+    color: hsl(0, 0%, 0%);
+    border: 1px solid hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    .about_container {
+        padding: 0;
+        margin: 0;
+    }
+    .image-section {
+        flex-direction: column;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }    
+    .first-image > img{
+        padding: 3rem 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    .second-image {
+        width: 100%;
+        right: 0;
+        top: 80%;
+        height: 5%;
+        padding: 2rem 2.5rem;
+        text-align: center;
+        margin: 5rem 0 3rem 0;
+        
+    }
+    .content-heading {
+        display: block;
+        width: 100%;
+        margin-top: 300px;
+    }    
+    .left-logo {
+        width: 100%;
+        text-align: center;
+    }
+    .btn-right {
+        width: 35%;
+    }
+    .button {
+        display: none;
+    }
+    .gallery-grid > img {
+        width: 100%;
+    }    
+    .grid-image > img {
+        width: 350px;
+        height: 150px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .botton-grid {
+        width: 100%;
+    }
+    .botton-grid > button {
+        display: block;
+        margin: 40px auto;
+        padding: 15px 50px ;
+    }
 }

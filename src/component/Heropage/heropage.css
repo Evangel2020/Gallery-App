@@ -3,15 +3,22 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: 'Alata', sans-serif;
 }
 .container {
     background-image: url("../../assets/images/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 98.7vw;
+    height: 600px;
+    width: 100%;
     padding: 2rem 4rem 0rem 7rem;
+}
+.hamburger-menu {
+    display: none;
+}
+.close-btn {
+    display: none;
 }
 .Navigation_bar {
     width: 100%;
@@ -21,6 +28,8 @@
 }
 .Navigation_bar > h3 {
     width: 60%;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
 }
 .nav_list {
     width: 40%;
@@ -34,10 +43,82 @@
 .hero-content {
     text-transform: uppercase;
     border: 1px solid hsl(0, 0%, 100%);
-    width: 40%;
+    width: 35%;
     font-size: 30px;
-    margin-top: 300px;
+    margin-top: 250px;
+    color: hsl(0, 0%, 100%);
     padding: 25px;
-    font-weight: 100;
+}
+.hero-content > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
     line-height: 1;
+}
+.toggle-btn {
+    display: none;
+    
+}
+.navlist-mobile {
+    display: none;
+}
+ @media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 1rem 1rem 0rem 1rem;
+        overflow: hidden;
+        height: 400px;
+    }
+    .Navigation_bar > h3 {
+        width: 100%;
+    }    
+    .menu-toggler.notclicked {
+        display: none;
+        width: 50%;
+        background-color: hsl(0, 0%, 100%);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        color: hsl(0, 0%, 100%);
+        z-index: 9;
+        position: fixed;
+    }
+    .menu-toggler.clicked {
+        display: block;
+        width: 50%;
+        background-color: hsl(0, 0%, 100%);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        color: hsl(0, 0%, 0%);
+        z-index: 9;
+        position: fixed;
+    }
+    .hamburger-menu {
+        display: inline-block;
+    }
+    .close-btn {
+        display: inline-block;
+        margin: 20px;
+    }
+    .nav_list {
+        display: none;
+    }
+    .navlist-mobile {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navlist-mobile > li {
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .hero-content {
+        width: 100%;
+        margin-top: 150px;
+        font-size: 20px;
+        padding: 10px;
+    }
 }

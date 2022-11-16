@@ -31,7 +31,7 @@ const Aboutpage = () => {
                     <h2>Our creation</h2>
                     </div>
                     <div className='btn-right'>
-                        <div className='button'>See All</div>
+                        <button className='button'>See All</button>
                     </div>
             </div>
             <div className='gallery-grid'>
@@ -87,6 +87,10 @@ const Aboutpage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='botton-grid'>
+                <button>See all</button>
             </div>
 
         </div>
